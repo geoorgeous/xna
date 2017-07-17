@@ -11,7 +11,7 @@ namespace XNATemplate
     /// <summary>
     /// A sprite which can be drawn to the viewport with various transforms and attributes.
     /// </summary>
-    public class Sprite
+    public class GM_Sprite
     {
         #region Private Fields
         
@@ -71,7 +71,7 @@ namespace XNATemplate
         /// Creates a sprite with a specified texture positioned at (0, 0) with all default attributes.
         /// </summary>
         /// <param name="texture"> The texture the sprite will use to draw. </param>
-        public Sprite(Texture2D texture)
+        public GM_Sprite(Texture2D texture)
         {
             this.texture = texture;
 
@@ -84,7 +84,7 @@ namespace XNATemplate
         /// </summary>
         /// <param name="texture"> The texture the sprite will use to draw. </param>
         /// <param name="position"> The position the sprite will draw at in screen coordinates. </param>
-        public Sprite(Texture2D texture, Point position)
+        public GM_Sprite(Texture2D texture, Point position)
         {
             this.texture = texture;
 
@@ -97,7 +97,7 @@ namespace XNATemplate
         /// </summary>
         /// <param name="texture"> The texture the sprite will use to draw. </param>
         /// <param name="destinationRect"> The rectangular bounds the sprite will be drawn to. </param>
-        public Sprite(Texture2D texture, Rectangle destinationRect)
+        public GM_Sprite(Texture2D texture, Rectangle destinationRect)
         {
             this.texture = texture;
 
@@ -111,7 +111,7 @@ namespace XNATemplate
         /// <param name="texture"> The texture the sprite will use to draw. </param>
         /// <param name="position"> The position the sprite will draw at in screen coordinates. </param>
         /// <param name="scale"> The scale that will be used to draw the sprite's texture. </param>
-        public Sprite(Texture2D texture, Point position, Vector2 scale)
+        public GM_Sprite(Texture2D texture, Point position, Vector2 scale)
         {
             this.texture = texture;
 
