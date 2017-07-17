@@ -13,7 +13,7 @@ namespace XNATemplate
     /// This makes changing resolutions and screen sizes easier and allows you to set many different screen sizes while keeping the game's logic the exact same.
     /// This class stores the game's virtual dimensions and a matrix to transform any virtual coordinates into the main viewport's space.
     /// </summary>
-    public static class Screen
+    public static class GM_Screen
     {
         #region private Fields
 
