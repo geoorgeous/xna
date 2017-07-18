@@ -1,10 +1,18 @@
 # xna
 
-_Most of these classes should be stand-alone and you should be able to copy and paste them straight in to your XNA projects. If any of the classes rely on one or more other of my classes then I'll specify in the file description. All classes have been prefixed with 'GM_' so they don't clash with any existing files but if you want to remove them just rename the class and file before using._
+_Most of these classes should be stand-alone and you should be able to copy and paste them straight in to your XNA projects. If this is not the case I'll specify the dependencies in the file description and below. All classes have been prefixed with 'GM\_' so they don't clash with any existing files but if you want to remove them just rename the class and file before using. Please also note that all the files have been __heavily__ commented. I would massively appreciate it if you would contact me upon finding any shotfalls or errors with my code, or if you simply have a suggestion to improve it and its functionailty!_
+
+[GM_Sprite.cs](#gm_sprite) 
+
+[GM_Screen.cs](#gm_screen) 
+
+<a name="gm_sprite"/>
 
 #### [GM_Sprite.cs](https://github.com/george-mcdonagh/xna/blob/master/GM_Sprite.cs)
 
 A wrapper class that helps with drawing textures with various transformations simplified for example you can specify a sprite width and height, or specify a scale to apply to the texture's default dimensions. This basically just takes all of the arguments for spriteBatch.Draw() and wraps it up into a class.
+
+<a name="gm_screen"/>
 
 #### [GM_Screen.cs](https://github.com/george-mcdonagh/xna/blob/master/GM_Screen.cs)
 
