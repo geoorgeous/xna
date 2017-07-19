@@ -8,6 +8,9 @@ using Microsoft.Xna.Framework;
 
 namespace XNATemplate
 {
+    /// <summary>
+    /// A simple input management class that preforms some basic mouse and keyboard checks.
+    /// </summary>
     public static class GM_Input
     {
         #region Private Fields
