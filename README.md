@@ -7,6 +7,7 @@ _Most of these classes should be stand-alone and you should be able to copy and 
 ***
 
 ### Contents
+- [GM_Button.cs](#gm_button)<br>
 - [GM_ClickableRegion.cs](#gm_clickableregion)<br>
 - [GM_ClickableSprite.cs](#gm_clickablesprite)<br>
 - [GM_Input.cs](#gm_input)<br>
@@ -14,6 +15,14 @@ _Most of these classes should be stand-alone and you should be able to copy and 
 - [GM_Sprite.cs](#gm_sprite)<br>
 
 ***
+
+<a name="gm_button"/>
+
+#### [GM_Button.cs](https://github.com/george-mcdonagh/xna/blob/master/GM_Button.cs)
+
+_Dependencies: GM_ClickableSprite
+
+This class derives from GM_ClickableSprite and adds graphical feedback to it through the use of several sprites for the different states. This is the only difference between the two classes. Basically if you want a very simple button use GM_ClickableSprite but if you want a more well-rounded button with better user feedback then use this class.
 
 <a name="gm_clickableregion"/>
 
