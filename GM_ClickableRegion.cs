@@ -74,7 +74,7 @@ namespace XNATemplate
         /// Updates the state of the clickable region. This will execute the logic which will change the 
         /// clickable region's state depending on the state and position of the mouse.
         /// </summary>
-        public void Update()
+        public void Update(Point mousePosition)
         {
             // Reset the clicked flag to false every frame. 
             // This means that the region can only be clicked for a single frame.
@@ -83,13 +83,8 @@ namespace XNATemplate
             // Don't do anything if it's disabled
             if (state != GM_ClickState.Disabled)
             {
-                // Because I'm using the GM_Screen class to manage screen resolution I first have to transform the mouse position that I get from GM_Input.
-                // If we don't use GM_Screen at all and we're using the default viewport etc then it's fine just to get the cursor position straight from GM_Input:
-                // Point mouseCoords = GM_Input.Mouse_GetCursorPos(true);
-                Point mouseCoords = GM_Screen.GetTransformedPoint(GM_Input.Mouse_GetCursorPos(true));
-
                 // Create a bounding box the size of one pixel at the mouse position. This will give us a rectangle to check for intersection with.
-                Rectangle mouseBounds = new Rectangle(mouseCoords.X, mouseCoords.Y, 1, 1);
+                Rectangle mouseBounds = new Rectangle(mousePosition.X, mousePosition.Y, 1, 1);
 
                 if (mouseBounds.Intersects(region))
                 {
