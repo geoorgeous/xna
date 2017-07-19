@@ -8,6 +8,7 @@ _Most of these classes should be stand-alone and you should be able to copy and 
 
 ### Contents
 - [GM_ClickableRegion.cs](#gm_clickableregion)<br>
+- [GM_Input.cs](#gm_input)<br>
 - [GM_Screen.cs](#gm_screen)<br>
 - [GM_Sprite.cs](#gm_sprite)<br>
 
@@ -20,6 +21,12 @@ _Most of these classes should be stand-alone and you should be able to copy and 
 _Dependencies: GM_Input_
 
 This class allows you to monitor a 2D space on the screen for clicks with the mouse's left, middle, or right button. It's a fairly simple class right now with mainly just an ```Update()``` function that should be called every frame to keep monitoring its state, of which there are four: Up, Hovered, Down, and Disabled.
+
+<a name="gm_input"/>
+
+#### [GM_Input.cs](https://github.com/george-mcdonagh/xna/blob/master/GM_Input.cs)
+
+A relatively simple Input management class which keeps track of the most recent and last frame's mouse and keyboard states. At the moment it just helps with the mice and keyboard input like checking whether buttons or keys are down, up, or have just been pressed or released.
 
 <a name="gm_screen"/>
 
