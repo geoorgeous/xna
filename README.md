@@ -8,6 +8,7 @@ _Most of these classes should be stand-alone and you should be able to copy and 
 
 ### Contents
 - [GM_ClickableRegion.cs](#gm_clickableregion)<br>
+- [GM_ClickableSprite.cs](#gm_clickablesprite)<br>
 - [GM_Input.cs](#gm_input)<br>
 - [GM_Screen.cs](#gm_screen)<br>
 - [GM_Sprite.cs](#gm_sprite)<br>
@@ -21,6 +22,14 @@ _Most of these classes should be stand-alone and you should be able to copy and 
 _Dependencies: GM_Input_
 
 This class allows you to monitor a 2D space on the screen for clicks with the mouse's left, middle, or right button. It's a fairly simple class right now with mainly just an ```Update()``` function that should be called every frame to keep monitoring its state, of which there are four: Up, Hovered, Down, and Disabled.
+
+<a name="gm_clickablesprite"/>
+
+#### [GM_ClickableSprite.cs](https://github.com/george-mcdonagh/xna/blob/master/GM_ClickableSprite.cs)
+
+_Dependencies: GM_Sprite, GM_ClickableRegion_
+
+This class is simply a child class of GM_Sprite with an added clickable region component. This is used exactly like a normal GM_Sprite except it is updated every frame like a GM_ClickableRegion to check for clicks inside the sprite bounds.
 
 <a name="gm_input"/>
 
