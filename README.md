@@ -7,19 +7,28 @@ _Most of these classes should be stand-alone and you should be able to copy and 
 ***
 
 ### Contents
-[GM_Sprite.cs](#gm_sprite)<br>
+[GM_ClickableRegion.cs](#gm_clickableregion)<br>
 [GM_Screen.cs](#gm_screen)<br>
+[GM_Sprite.cs](#gm_sprite)<br>
 
 ***
 
-<a name="gm_sprite"/>
+<a name="gm_clickableregion"/>
 
-#### [GM_Sprite.cs](https://github.com/george-mcdonagh/xna/blob/master/GM_Sprite.cs)
+#### [GM_ClickableRegion.cs](https://github.com/george-mcdonagh/xna/blob/master/GM_ClickableRegion.cs)
 
-A wrapper class that helps with drawing textures with various transformations simplified for example you can specify a sprite width and height, or specify a scale to apply to the texture's default dimensions. This basically just takes all of the arguments for spriteBatch.Draw() and wraps it up into a class.
+_Dependencies: GM_Input, GM_Screen (This one's optional, see code for details)._
+
+This class allows you to monitor a 2D space on the screen for clicks with the mouse's left, middle, or right button. It's a fairly simple class right now with mainly just an ```Update()``` function that should be called every frame to keep monitoring its state, of which there are four: Up, Hovered, Down, and Disabled.
 
 <a name="gm_screen"/>
 
 #### [GM_Screen.cs](https://github.com/george-mcdonagh/xna/blob/master/GM_Screen.cs)
 
-A manager-style class that helps with changing the screen size while keeping the game logic the same. It automatically fits the game's viewport to the screen (while preserving aspect ratio) and keeps a record of the game's 'virtual' dimensions for the game's logic. Also calculates the view matrix every time the game dimensions are changed which should be used with spriteBatch.Begin().
+A manager-style class that helps with changing the screen size while keeping the game logic the same. It automatically fits the game's viewport to the screen (while preserving aspect ratio) and keeps a record of the game's 'virtual' dimensions for the game's logic. Also calculates the view matrix every time the game dimensions are changed which should be used with ```spriteBatch.Begin()```. Doesn't handle user-screen-resizing yet (this includes maximizing the screen), however it does switch in and out of full screen quite quickly! (Compared to the default ```graphics.IsFullScreen = true;```).
+
+<a name="gm_sprite"/>
+
+#### [GM_Sprite.cs](https://github.com/george-mcdonagh/xna/blob/master/GM_Sprite.cs)
+
+A wrapper class that helps with drawing textures with various transformations simplified for example you can specify a sprite width and height, or specify a scale to apply to the texture's default dimensions. This basically just takes all of the arguments for ```spriteBatch.Draw()``` and wraps it up into a class.
