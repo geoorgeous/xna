@@ -17,7 +17,7 @@ _Most of these classes should be stand-alone and you should be able to copy and 
 
 #### [GM_ClickableRegion.cs](https://github.com/george-mcdonagh/xna/blob/master/GM_ClickableRegion.cs)
 
-_Dependencies: GM_Input, GM_Screen (This one's optional, see code for details)._
+_Dependencies: GM_Input_
 
 This class allows you to monitor a 2D space on the screen for clicks with the mouse's left, middle, or right button. It's a fairly simple class right now with mainly just an ```Update()``` function that should be called every frame to keep monitoring its state, of which there are four: Up, Hovered, Down, and Disabled.
 
