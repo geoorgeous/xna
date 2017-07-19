@@ -7,9 +7,9 @@ _Most of these classes should be stand-alone and you should be able to copy and 
 ***
 
 ### Contents
-[GM_ClickableRegion.cs](#gm_clickableregion)<br>
-[GM_Screen.cs](#gm_screen)<br>
-[GM_Sprite.cs](#gm_sprite)<br>
+- [GM_ClickableRegion.cs](#gm_clickableregion)<br>
+- [GM_Screen.cs](#gm_screen)<br>
+- [GM_Sprite.cs](#gm_sprite)<br>
 
 ***
 
