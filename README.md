@@ -7,6 +7,7 @@ _Most of these classes should be stand-alone and you should be able to copy and 
 ***
 
 ### Contents
+- [GM_AssetManager.cs](#gm_assetmanager)<br>
 - [GM_Button.cs](#gm_button)<br>
 - [GM_ClickableRegion.cs](#gm_clickableregion)<br>
 - [GM_ClickableSprite.cs](#gm_clickablesprite)<br>
@@ -16,11 +17,17 @@ _Most of these classes should be stand-alone and you should be able to copy and 
 
 ***
 
+<a name="gm_assetmanager"/>
+
+#### [GM_AssetManager.cs](https://github.com/george-mcdonagh/xna/blob/master/GM_AssetManager.cs)
+
+A very straight forward and simple management class which stores all of the textures, fonts, and sound effects you give it. Assets can then be gotten from the asset manager by the name you give them upon adding them. Hopefully will expand on this in the future to load assets from files.
+
 <a name="gm_button"/>
 
 #### [GM_Button.cs](https://github.com/george-mcdonagh/xna/blob/master/GM_Button.cs)
 
-_Dependencies: GM_ClickableSprite
+_Dependencies: GM_ClickableSprite_
 
 This class derives from GM_ClickableSprite and adds graphical feedback to it through the use of several sprites for the different states. This is the only difference between the two classes. Basically if you want a very simple button use GM_ClickableSprite but if you want a more well-rounded button with better user feedback then use this class.
 
