@@ -1,15 +1,15 @@
 /****************************************************/
-/* graphics.js			     		 				*/
-/*									 				*/
+/* graphics.js			     		    */
+/*						    */
 /* This file contains a collection of graphical	    */
-/* classes and functions which can be used to draw	*/
-/* on to a HTML5 canvas.						 	*/
-/*									 				*/
-/* Uses: core.js									*/
-/*									 				*/
-/*									 				*/
-/*                                George McDonagh	*/
-/*									 				*/
+/* classes and functions which can be used to draw  */
+/* on to a HTML5 canvas.			    */
+/*						    */
+/* Uses: core.js				    */
+/*						    */
+/*						    */
+/*                                George McDonagh   */
+/*						    */
 /****************************************************/
 
 ///////////////////////////////////////
